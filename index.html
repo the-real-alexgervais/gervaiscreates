@@ -33,6 +33,17 @@
         a {
           font-color: black;
         }
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
 
       </style>
       <title>GERVAIS CREATES</title>
@@ -44,11 +55,22 @@
         </ul>
         <h1>MY PROJECTS</h1>
         <p>website for my art</p>'
-        <img src="WLR-02.png" alt="music posters" style="width: 400px; padding-top:50px; padding-bottom:50px; padding-left:50px; padding-right:50px;">
+        /* <img src="WLR-02.png" alt="music posters" style="width: 400px; padding-top:50px; padding-bottom:50px; padding-left:50px; padding-right:50px;">
         <br>
         <img src="momgift-01.png" alt="whale posters" style="width: 400px; padding-top:50px; padding-bottom:50px; padding-left:50px; padding-right:50px; text-align:right;">
         <br>
-        <img src="CRISPR-02.png" alt="MUN posters" style="width: 400px; padding-top:50px; padding-bottom:50px; padding-left:50px; padding-right:50px;">
+        <img src="CRISPR-02.png" alt="MUN posters" style="width: 400px; padding-top:50px; padding-bottom:50px; padding-left:50px; padding-right:50px;"> */
+        <div class="row">
+          <div class="column">
+            <img src="WLR-02.png" alt="music" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="momgift-01.png" alt="whales" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="CRISPR-02.png" alt="MUN" style="width:100%">
+        </div>
+      </div>
 
     </body>
   </html>
